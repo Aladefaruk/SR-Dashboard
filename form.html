@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel='stylesheet' href='style.css' >
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    </head>
+    <body id='container'>
+        <div class="wrapper">
+            <form id='containerr' method="POST" >
+                <fieldset>
+                <legend>New Article</legend>
+                <label for='Title'>Article Title</label><br>
+                <input type="text" id='AT' name='Article_Title'><br>
+
+                <label for='Link'>Article Link</label><br>
+                <input type="text" id='AL' name='Article_Link'><br>
+
+                <label for='Description'>Article Description</label><br>
+                <textarea id='AD' placeholder="Tell us about the article"></textarea> <br>
+                   
+                
+              <label for='type'>Type:</label>
+              <div id='select'>
+                <select name="type">
+                <option value ="link">LINK</option>
+                <option value ="youtube_video">YOUTUBE VIDEO</option>
+                <option value ="survey">SURVEY</option>
+                </select>
+              </div><br>
+               
+                <label>Upload Image</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile01"
+                        aria-describedby="inputGroupFileAddon01">
+                      <label class="custom-file-label" for="inputGroupFile01">Choose image</label>
+                    </div>
+                  </div>
+                
+                
+                <input type="submit"  value="Submit">
+                <input type="reset"   value="Clear All">
+            </fieldset>
+        
+                </form>
+          </div>
+    </body>
+</html>
